@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>CAR CRUD</title>
+  </head>
+  <body>
+    <form id="form" class="create-form">
+      <input type="text" id="name" placeholder="Nomini kiriting..." />
+      <input type="number" id="year" placeholder="Yilini kiriting..." />
+      <input type="text" id="color" placeholder="Rangini kiriting..." />
+      <input type="number" id="price" placeholder="Narxini kiriting..." />
+
+      <input id="add-btn" type="button" value="Qo'shish" />
+    </form>
+
+    <div class="wrapper">
+      <form>
+        <select name="name" id="name-select">
+          <option value="" selected>Mashinani tanlang</option>
+          <option value="Damas">Damas</option>
+          <option value="Matiz">Matiz</option>
+          <option value="Nexia">Nexia</option>
+          <option value="Spark">Spark</option>
+        </select>
+
+        <select name="year" id="year-select">
+          <option value="" selected>Mashinani yilini tanlang</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+        </select>
+
+        <select name="status" id="status-select">
+          <option value="" selected>Mashinani holatini tanlang</option>
+          <option value="active">Sotilmagan</option>
+          <option value="inactive">Sotilgan</option>
+        </select>
+
+        <div class="search">
+          <input type="search" placeholder="Qidruv..." />
+        </div>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nomi</th>
+            <th>Rangi</th>
+            <th>Narxi</th>
+            <th>Yili</th>
+            <th>Holati</th>
+          </tr>
+        </thead>
+
+        <tbody id="tbody">
+          <!-- <tr>
+                <td>1</td>
+                <td>Nexia</td>
+                <td>Oq</td>
+                <td>4000</td>
+                <td>2014</td>
+                <td>Sotilgan</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Matiz</td>
+                <td>Ko'k</td>
+                <td>3500</td>
+                <td>2011</td>
+                <td>Sotilmagan</td>
+            </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
